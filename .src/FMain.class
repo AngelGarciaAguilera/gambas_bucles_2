@@ -1,0 +1,18 @@
+' Gambas class file
+
+
+Public Sub BCalcular_Click()
+
+  Dim num As Integer = TBNum.Text
+  Dim multiplos As Integer
+  Dim i As Integer = 0
+  
+  LResult.Text = ""
+  
+  While (i < 10)
+    multiplos = num * i
+    LResult.Text = LResult.Text & multiplos & ", "
+    i += 1
+  Wend 
+
+End
